@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css\bootstrap.min.css">
+    <script src="js/jquery.min.js"></script>
+    <script src="js\bootstrap.bundle.min.js"></script>
+    <style>
+        .er{
+            box-shadow: 5px 5px grey;
+        }
+        .but{
+            box-shadow: 3px 3px grey;
+            border-radius: 5px;
+        }
+        .but:active{
+            box-shadow: -2px -2px grey;
+        }
+    </style>
+</head>
+<body>
+    <br> <br>
+    <div class="container">
+        <div class="alert alert-success er">
+            <strong>Success</strong>
+            This alert indicates Success
+        </div>
+        <div class="alert alert-info er">
+            <strong>Info</strong>
+            This alert indicates Info
+        </div>
+        <div class="alert alert-warning er">
+            <strong>Warning</strong>
+            This alert indicates Warning
+        </div>
+        <div class="alert alert-danger er">
+            <strong>Danger</strong>
+            This alert indicates Danger
+        </div>
+    </div>
+    <div class="btn-group-vertical">
+        <div class="btn-group">
+            <button class="btn btn-primary">
+                Apple
+            </button>
+            <button class="btn btn-primary">
+                Samsung
+            </button>
+            <div class="btn-group">
+                <button type="button" class="btn btn-primary dropdown-toggle" data-toggle="dropdown">
+                    Sony
+                </button>
+                <div class="dropdown-menu">
+                    <a href="#" class="dropdown-item">Tablet</a>
+                    <a href="#" class="dropdown-item">Smartphone</a>
+                </div>
+            </div>
+            
+        </div>
+        <div class="container">
+            <br><br>
+            <button class="but" type="button">Click Here</button>
+        </div>
+        
+    </div>
+    
+</body>
+</html>

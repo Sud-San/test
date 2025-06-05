@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <title>Sign Up</title>
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    </head>
+    <body>
+        <div class="container mt-5">
+            <h2>Sign Up</h2>
+            <form id="signUpForm" action="" onsubmit="return form_valid();">
+                <div class="form-group">
+                    <label for="signUpUsername">Username</label>
+                    <input type="text" class="form-control" id="username" placeholder="Enter username">
+                </div>
+                <div class="form-group">
+                    <label for="signUpEmail">Email address</label>
+                    <input type="email" class="form-control" id="email" placeholder="Enter email">
+                </div>
+                <div class="form-group">
+                    <label for="signUpPassword">Password</label>
+                    <input type="password" class="form-control" id="pass" placeholder="Enter Password">
+                </div>
+                <button type="submit" class="btn btn-primary">Sign Up</button>
+            </form>
+        </div>
+        <script>
+            function form_valid()
+            {
+                name=document.getElementById("username").value;
+                passw=document.getElementById("pass").value;
+                email_id=document.getElementById("email").value;
+                at_pos=email_id.indexOf("@");
+                dot_pos=email_id.lastIndexOf(".");
+
+                if(name=="")
+                {
+                    alert("Enter user-name");
+                }
+                if(at_pos<1 || (dot_pos-at_pos<2))
+                {
+                    alert("Please enter correct email id");
+                }
+                if(passw=="")
+                {
+                    alert("Enter password properly");
+                }
+                
+                return(true);
+            }
+        </script>
+    </body>
+</html>
